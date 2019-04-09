@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+           <button v-on:click="counter++">Increase</button>
+           <button v-on:click="counter--">Decrease</button>
+           <button v-on:click="secondcounter--">Increase Second</button>
+            <p>Counter:{{counter}}|{{secondcounter}}</p>
+            <p>Result:{{result()}}|{{output}}</p>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
